@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>학생 정보</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .missing {
+            color: red;
+            font-weight: bold;
+        }
+
+        .outlier {
+            background-color: #ffe5e5;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>학생 성적 현황</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>성적</th>
+                <th>주민번호</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>김철수</td>
+                <td>95</td>
+                <td>980101-1234567</td>
+            </tr>
+            <tr>
+                <td>이영희</td>
+                <td>88</td>
+                <td>010305-4234567</td>
+            </tr>
+            <tr>
+                <td>박민수</td>
+                <td class="missing">결측치</td>
+                <td>950720-1234567</td>
+            </tr>
+            <tr>
+                <td>최지은</td>
+                <td>77</td>
+                <td>030215-4234567</td>
+            </tr>
+            <tr class="outlier">
+                <td>정우성</td>
+                <td>105</td>
+                <td>990101-1234567</td>
+            </tr>
+            <tr>
+                <td>한지민</td>
+                <td>82</td>
+                <td>020912-4234567</td>
+            </tr>
+            <tr class="outlier">
+                <td>강호동</td>
+                <td>-10</td>
+                <td>700511-1234567</td>
+            </tr>
+            <tr>
+                <td>신세경</td>
+                <td>91</td>
+                <td>971224-2234567</td>
+            </tr>
+            <tr>
+                <td>유재석</td>
+                <td>85</td>
+                <td>720814-1234567</td>
+            </tr>
+            <tr>
+                <td>송혜교</td>
+                <td class="missing">결측치</td>
+                <td>811122-2234567</td>
+            </tr>
+            <tr>
+                <td>차은우</td>
+                <td>79</td>
+                <td>970330-1234567</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
